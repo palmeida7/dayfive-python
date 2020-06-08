@@ -24,7 +24,7 @@ print(phonebook_dict) """
 
 #Given the following dictionary:
 
-ramit = {
+""" ramit = {
   'name': 'Ramit',
   'email': 'ramit@gmail.com',
   'interests': ['movies', 'tennis'],
@@ -40,7 +40,7 @@ ramit = {
       'interests': ['movies', 'tv']
     }
   ]
-}
+} """
 """ Write a python expression that gets the email address of Ramit.
 Write a python expression that gets the first of Ramit's interests.
 Write a python expression that gets the email address of Jasmine.
@@ -61,6 +61,23 @@ Write a python expression that gets the second of Jan's two interests. """
 """ friends_count = len(ramit['friends'])
 print(friends_count)
 print('friends count: %d' % friends_count) """
+
+#Write a letter_histogram program that asks the user for input,
+# and prints a dictionary containing the tally of 
+# how many times each letter in the alphabet was used in the word
+
+input_string = input("Enter a word: \n")
+ltr_count = {} 
+  
+for letter in input_string: 
+    if letter in ltr_count: 
+        ltr_count[letter] += 1
+    else: 
+        ltr_count[letter] = 1
+    #except NameError:
+ 
+
+print ("The count per letter in '{}' is :\n {}".format(input_string, str(ltr_count)))
 
 
 
